@@ -1,0 +1,280 @@
+// text formatting
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+@font-face {
+  font-family: 'Helvetica-Roman';
+  src: url('Neue Helvetica/HelveticaNeueLTCom-Roman.ttf') format('truetype');
+}
+body {
+	line-height: 1;
+    font-family: 'Helvetica-Roman', sans-serif;
+    font-size: 16px;
+    color: #2A363B;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+p {
+  line-height: 1.5;
+  margin: 5px 0;
+  text-indent: 40px;
+  font-size: 1.1em;
+}
+p a {
+  text-decoration: underline;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Helvetica, Arial, sans-serif;
+/*  font-weight: 800;*/
+}
+
+blockquote {
+  color: #777777;
+  font-style: italic;
+}
+
+hr.small {
+  max-width: 100px;
+  margin: 15px auto;
+  border-width: 4px;
+  border-color: white;
+}
+
+::selection {
+  background: #F7A89A; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #F7A89A; /* Gecko Browsers */
+}
+
+.container {
+    position: absolute;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #FAFAFA;
+}
+
+.anash{
+    position: relative;
+    width: 0;
+    margin: 0;
+    float: left;
+    background-color: #222;
+    height: 100%;
+    border-right: 1px solid #F05235;
+}
+
+.anash ul{
+    opacity: 0;
+}
+
+.tregim, .tregim_admin{
+   /* background-color: white;*/
+    padding: 100px 50px;
+    position: relative;
+    height: 100%;
+    width: 60%;
+    display: inline-block;
+    overflow: scroll;
+    color: black;
+    opacity: 0;
+}
+.tregim_admin p{
+    font-size: 1em;
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+.menu .listMenu li a{
+    transition: all 0.3s;
+    color: #F05235;
+    padding: 20px 0px 20px 5px;;
+    font-size: 1.4em;
+    text-decoration: none;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+li{
+     padding: 20px 5px;
+}
+
+.menu{
+     margin-top: 50%;
+}
+
+ul{
+    padding: 5px;
+    height: 100%;
+}
+
+.menu .listMenu li a:hover{
+    color: #fafafa;
+}
+
+a{
+    text-decoration: none;
+}
+
+.demo-card-event{
+    position: relative;
+    background-color: #FAFAFA;
+    margin: 30px;
+    transition: border 0.6s, background-color 0.6s, box-shadow 0.6s;
+    border: 1px solid white;
+}
+
+.demo-card-event h3{
+    margin: 0 auto;
+    vertical-align: middle;
+    color: #F05235;
+}
+
+.demo-card-event:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    border-color: #F05235;
+}
+.blocks {
+    height: 300px;
+    width: 100%;
+	position: absolute;
+    top: 45%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+}
+
+/* login */
+
+.login{
+    height: 400px;
+    width: 350px;;
+    padding: 40px;
+    background-color: #999;
+    margin-top: -80px;
+    color: #333;
+    background-color: #fafafa;
+}
+.login form input{
+    color: #F05235;
+}
+
+.nofka{
+    margin-top: 5px;
+}
+.fjalekalimi {
+	margin-bottom: 15px;
+}
+#login-btn{
+    margin: 30px auto;
+    left: 36%;
+    background-color: #fafafa;
+    color: #F05235;
+    transition: color 0.3s, background-color 0.3s;
+}
+#login-btn:hover, #submit-btn:hover, #shto-btn:hover{
+    color: #fafafa;
+    background-color: #F05235;
+}
+
+#submit-btn {
+	 margin: 10px auto 40px auto;
+    left: 25%;
+    background-color: #fafafa;
+    color: #F05235;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+#shto-btn{
+    margin: 0 auto;
+    left: 40%;
+    background-color: #fafafa;
+    color: #F05235;
+    transition: color 0.3s, background-color 0.3s;
+}
+#membajmend {
+	float: right;
+}
+input.membajmend {
+    position: relative;
+    top: 2px;
+    float: right;
+    margin: 0 6px 0 0;
+}
+.login a{
+    color: #F05235;
+    transition: color 0.3s;
+}
+a:hover{
+    color: #333;
+}
+
+#textarea1:focus {
+	height: 3rem;
+}
+
+.vazhdo{
+	text-align: right;
+}
+.vazhdo:hover{
+	color: #F05235;
+	cursor: pointer;
+}

@@ -1,0 +1,40 @@
+<!-- views/login.ejs -->
+<!doctype html>
+<html>
+<head>
+	<title>Regjistrohu</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="bower_components/material-design-lite/material.min.css">
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
+    <link rel="stylesheet" href="./style/main.css">
+</head>
+<body>
+    <div class="container">
+
+           <!-- show any messages that come back with authentication -->
+            <% if (message.length > 0) { %>
+                <div class="alert alert-danger"><%= message %></div>
+            <% } %>
+                
+            <div class="blocks">
+            <form class="demo-card-event mdl-card mdl-shadow--2dp login" action="/signup" method="post">
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label nofka">
+                <input class="mdl-textfield__input" type="text" name="nofka">
+                <label class="mdl-textfield__label" for="sample1">Nofka</label>
+              </div>
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label fjalekalimi">
+                <input class="mdl-textfield__input" type="password" name="fjalekalimi">
+                <label class="mdl-textfield__label" for="sample1">Fjalëkalimi</label>
+              </div>
+                <div class="etj">
+               <button type="submit" id="submit-btn" class="mdl-button mdl-js-button mdl-button--raised">Regjistrohu</button> <br>
+                 Je regjistruar? <a class="nice-link" href="/login">Hyr</a> <br><br>
+                 Ose shko <a class="nice-link" href="/">në fillim</a>.</div>
+            </form>           
+             </div>
+            
+  
+    </div>
+    <script type="text/javascript" src="bower_components/material-design-lite/material.min.js"></script>
+</body>
+</html>
